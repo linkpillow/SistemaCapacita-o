@@ -8,6 +8,15 @@ public class ServidorPublico {
         private String vinculo;
         private double salario;
 
+        private String cargo;
+
+        public ServidorPublico(){}
+        public ServidorPublico(int matricula, String nome, String cargo){
+            this.matricula = matricula;
+            this.nome = nome;
+            this.cargo = cargo;
+        }
+
         public double getValorHora() {
                 return valorHora;
         }
@@ -19,17 +28,13 @@ public class ServidorPublico {
         private double valorHora;
         private int idade;
         private int tempoDeContribuicao;
-        private String cargo;
+
         private String telefone;
         private String celular;
         private String cpf;
         private String lotacao;
         private String email;
         private double horasExtras;
-
-    public ServidorPublico() {
-        this.valorHora = valorHora;
-    }
 
     public String getEmail() {
                 return email;
